@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Hungry Monster</title>
+</head>
+<body>
+    <main class="container">
+        <!-- search area start -->
+        <section id="search-area">
+              <input id="searchInput" type="text" class="form-control"  placeholder="Find your delicious food..">
+              <button onclick="searchButton()" type="button" class="btn btn-success text-white ms-2">Search</button>
+        </section>
+        <!-- search area end -->
+        <!-- ingredient display start -->
+        <section id="ingredient-area">
+          <div class="row" id="allIngredient">
+              
+          </div>
+        </section>
+        <!-- ingredient display end -->
+        <!-- Food Display start -->
+        <section class="food-display">
+          <div id="resultArea" class="text-center">
+            <div id="errorShow"> <!--error message show-->
+
+            </div>
+            <div id="allMealItems" class="row row-cols-1 row-cols-md-3" >
+
+            </div>
+          </div>
+        </section>
+        <!-- Food Display end -->
+      </main>
+
+<!-- Custom JavaScript Link -->
+    <script src="app.js"></script>
+</body>
+</html>
